@@ -173,6 +173,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~src/assets";
 $color-red-dark: #ff1c1c;
 $color-red-light: #ff5656;
 $button-width: 12rem;
@@ -317,13 +318,13 @@ $button-height: 1rem;
       }
     }
     &-n-curti::before {
-      content: url("../assets/n-curti.png");
+      content: url("@/assets/n-curti.png");
       vertical-align: middle;
       margin-right: 0.5rem;
     }
     &-n-curti {
       @media (max-width: 320px) {
-        content: url("../assets/n-curti1.png");
+        content: url("@/assets/n-curti1.png");
         padding: 0.6rem;
         margin: auto;
       }
@@ -344,7 +345,7 @@ $button-height: 1rem;
       }
     }
     &-curti::before {
-      content: url("../assets/curti.png");
+      content: url("@/assets/curti.png");
       vertical-align: middle;
       margin-right: 0.5rem;
       @media (max-width: 320px) {
@@ -354,7 +355,7 @@ $button-height: 1rem;
     &-curti {
       color: $color-red-dark;
       @media (max-width: 320px) {
-        content: url("../assets/curti1.png");
+        content: url("@/assets/curti1.png");
         padding: 0.6rem;
         margin: auto;
       }
