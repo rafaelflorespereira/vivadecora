@@ -12,12 +12,8 @@
         <div class="poster__card-info--heading">{{ movie.title }}</div>
         <div class="poster__card-info--rating-img">
           <span v-for="rating in 5" :key="rating">
-            <img
-              v-if="rating < movie.rating"
-              src="..\assets\favorite.png"
-              alt=""
-            />
-            <img v-else src="..\assets\favorite_.png" alt="" />
+            <img v-if="rating < movie.rating" :src="getFavoriteImgUrl" alt="" />
+            <img v-else :src="getNotFavoriteImgUrl" alt="" />
           </span>
         </div>
         <div class="poster__card-info--rating-text">{{ movie.ratingText }}</div>
@@ -55,6 +51,12 @@ export default {
   methods: {
     closeModal(event) {
       this.modalState = event;
+    },
+    getNotFavoriteImgUrl() {
+      return require("../assets/favorite_.png");
+    },
+    getFavoriteImgUrl() {
+      return require("../assets/favorite.png");
     },
   },
 };
