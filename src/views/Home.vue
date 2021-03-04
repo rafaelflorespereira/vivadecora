@@ -317,13 +317,13 @@ $button-height: 1rem;
       }
     }
     &-n-curti::before {
-      content: url("@/assets/n-curti.png");
+      content: url("../assets/n-curti.png");
       vertical-align: middle;
       margin-right: 0.5rem;
     }
     &-n-curti {
       @media (max-width: 320px) {
-        content: url("@/assets/n-curti1.png");
+        content: url("../assets/n-curti1.png");
         padding: 0.6rem;
         margin: auto;
       }
@@ -335,7 +335,6 @@ $button-height: 1rem;
       @media (max-width: 320px) {
         font-size: 1.1rem;
         line-height: 1;
-        display: block;
         margin: auto;
         padding: 1.3rem;
         height: 1rem;
@@ -344,7 +343,7 @@ $button-height: 1rem;
       }
     }
     &-curti::before {
-      content: url("@/assets/curti.png");
+      content: url("../assets/curti.png");
       vertical-align: middle;
       margin-right: 0.5rem;
       @media (max-width: 320px) {
@@ -354,7 +353,7 @@ $button-height: 1rem;
     &-curti {
       color: $color-red-dark;
       @media (max-width: 320px) {
-        content: url("@/assets/curti1.png");
+        content: url("../assets/curti1.png");
         padding: 0.6rem;
         margin: auto;
       }
