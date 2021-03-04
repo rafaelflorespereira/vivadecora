@@ -173,7 +173,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~src/assets";
 $color-red-dark: #ff1c1c;
 $color-red-light: #ff5656;
 $button-width: 12rem;
